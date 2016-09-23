@@ -171,5 +171,17 @@ function outside(temperature, humidity, cloudiness) {
 		return "I love outside";
 	}
 }
-// #16 Create a function called callerBack that takes in a function (holla) and a string parameter(back) and invokes it(holla) 
+// #16 Create a function called callerBack that takes in a function (holla) and a string parameter(back) and invokes it(holla)
 // with the argument string(back) + ' back'." example - If I call you with 'Give it' you should invoke holla with 'Give it back'
+function holla(str) {
+	console.log(holla);
+	return str;
+}
+holla('hello');
+
+function callerBack(holla, str) {
+	holla(holla + ' back');
+	console.log(callerBack);
+	return callerBack;
+}
+callerBack(holla, "back");
